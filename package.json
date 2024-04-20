@@ -1,8 +1,12 @@
 {
   "name": "coding-bootcamp-testimonials",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "author": {
+    "name": "Moses Boakye-Tenkorang",
+    "email": "mbtenkorang@yahoo.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

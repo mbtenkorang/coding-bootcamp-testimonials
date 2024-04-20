@@ -1,0 +1,48 @@
+/* CSS Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+body div,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+footer {
+    font-size: .9rem;
+}
+
+footer>a {
+    text-decoration: none;
+}

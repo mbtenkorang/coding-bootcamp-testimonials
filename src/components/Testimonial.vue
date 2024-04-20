@@ -33,6 +33,7 @@ const props = defineProps({
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .b-slide__footer {
@@ -55,9 +56,9 @@ const props = defineProps({
 .b-slide__text {
     text-align: center;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-block-end: 1.5rem;
     color: var(--darkblue);
-    max-width: 88%;
+    max-width: 94%;
 }
 </style>

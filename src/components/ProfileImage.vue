@@ -14,10 +14,3 @@ const props = defineProps({
 <template>
     <img :src="imageurl" :alt="`Picture of ${username}`" class="profile-picture" />
 </template>
-
-<style>
-.profile-picture {
-    border-radius: 1rem;
-    max-width: 90%;
-}
-</style>

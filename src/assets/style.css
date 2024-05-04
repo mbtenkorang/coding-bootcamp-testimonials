@@ -23,10 +23,6 @@
 }
 
 
-.b-slide__container {
-    max-width: 94%;
-}
-
 .attribution {
     grid-row: 2/3;
     font-size: .5rem;

@@ -65,7 +65,7 @@ const testimonialData = ref([
 .b-slide__main__container {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  background: 42% top / 92% no-repeat url("/images/pattern-bg.svg"), 48% 65% / 18% no-repeat url("/images/pattern-quotes.svg");
+  background: 42% top / 92% no-repeat url("/images/pattern-bg.svg"), 50% 61% / 15% no-repeat url("/images/pattern-quotes.svg");
 }
 
 .b-slide__header__container {
@@ -135,6 +135,7 @@ const testimonialData = ref([
   color: var(--darkblue);
   font-weight: 700;
   font-size: 1rem;
+  margin-block-end: .25em;
 }
 
 .b-slide__userrole {
@@ -144,10 +145,10 @@ const testimonialData = ref([
 .b-slide__text {
   text-align: center;
   font-weight: 300;
-  font-size: 1.1rem;
-  margin-block-end: 1.5rem;
+  font-size: 1.2rem;
+  margin-block-end: 1.25em;
   color: var(--darkblue);
-  max-width: 94%;
+  width: 80%;
 }
 
 @media only screen and (min-width: 980px) {

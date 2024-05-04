@@ -65,7 +65,7 @@ const testimonialData = ref([
 .b-slide__main__container {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  background: 42% top / 92% no-repeat url("/images/pattern-bg.svg"), 48% 68% / 18% no-repeat url("/images/pattern-quotes.svg");
+  background: 42% top / 92% no-repeat url("/images/pattern-bg.svg"), 48% 65% / 18% no-repeat url("/images/pattern-quotes.svg");
 }
 
 .b-slide__header__container {
@@ -122,7 +122,7 @@ const testimonialData = ref([
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .b-slide__footer {

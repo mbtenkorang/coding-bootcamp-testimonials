@@ -146,28 +146,42 @@ const testimonialData = ref([
   text-align: center;
   font-weight: 300;
   font-size: 1.2rem;
+  line-height: 1.3;
   margin-block-end: 1.25em;
   color: var(--darkblue);
   width: 80%;
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 499px) and (max-width: 800px){
+  
+  .b-container{
+    max-width: 30rem;
+    margin-inline: auto;
+  }
+}
+
+
+
+@media only screen and (min-width: 890px) {
   .b-container {
     background-size: 40%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    max-width: 96%;
+    background-size: 50%;
   }
 
   .b-slide__main__container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "t i";
-    background-position: right, left;
-    background-size: contain, 10%;
-    /* min-height: 90vh; */
+    background-position: right, left 22% top 22%;
+    background-size: contain, 8%;
+    min-height: 40rem;
   }
 
   .b-slide__header__container {
     grid-area: i;
+    justify-items: center;
   }
 
   .profile-picture {
@@ -177,19 +191,23 @@ const testimonialData = ref([
   }
 
   .b-button {
-    padding: 2rem 2rem;
-    right: 70%;
-    top: -50%;
+    /* padding: 2rem 2rem; */
+    right: 150%;
+    top: -65%;
   }
 
   .b-slide__testimonial__container {
     grid-area: t;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
+    left: 22%;
+    margin-inline-start: 2.5em;
   }
 
   .b-slide__footer {
     flex-direction: row;
+    align-items: baseline;
   }
 
   .b-slide__username {
@@ -200,6 +218,7 @@ const testimonialData = ref([
     font-size: 2rem;
     max-width: 100%;
     text-align: left;
+    width: 100%;
   }
 }
 </style>

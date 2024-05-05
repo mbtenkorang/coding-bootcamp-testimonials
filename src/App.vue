@@ -41,12 +41,10 @@ const testimonialData = ref([
         <ProfileImage :imageurl="currentSlide.imageurl" :username="currentSlide.username" />
         <!-- Navigation Buttons -->
         <div class="b-nav--bar">
-          <button role="button" @click="previousSlide" aria-labelledby="previous slide" class="b-button b-button__left">
-
+          <button role="button" @click="previousSlide" aria-labelledby="previous testimonial" aria-label="Previous Testimonial" Title="Previous Testimonial" class="b-button b-button__left">
           </button>
 
-          <button type="button" @click="nextSlide" aria-labelledby="next slide" class="b-button b-button__right">
-
+          <button role="button" @click="nextSlide" aria-labelledby="next testimonial" aria-label="Next Testimonial" Title="Next Testimonial" class="b-button b-button__right">
           </button>
         </div>
 

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, Transition } from 'vue';
 import ProfileImage from './components/ProfileImage.vue';
 import Testimonial from './components/Testimonial.vue';
 
@@ -34,7 +34,7 @@ const testimonialData = ref([
 
 <template>
 
-  <article class="b-slide__main__container">
+  <article class="b-slide__main__container" :key="currentSlideIndex">
     <!-- Testimonial Image -->
     <div class="b-slide__header__container">
       <div class="b-slide__image__container">
@@ -67,6 +67,7 @@ const testimonialData = ref([
   grid-template-rows: repeat(2, 1fr);
   background: 42% top / 92% no-repeat url("/images/pattern-bg.svg"), 50% 61% / 15% no-repeat url("/images/pattern-quotes.svg");
 }
+
 
 .b-slide__header__container {
   display: grid;
@@ -152,6 +153,28 @@ const testimonialData = ref([
   width: 80%;
 }
 
+/* Animation Settings */
+.profile-picture, .b-slide__testimonial__container{
+  animation: 3s ease-in backwards showElement;
+}
+
+@keyframes showElement{
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes exitElement{
+
+}
+
+
+/* Media Query for Tablets */
 @media only screen and (min-width: 499px) and (max-width: 800px){
   
   .b-container{
@@ -161,11 +184,10 @@ const testimonialData = ref([
 }
 
 
-
+/* Media Query for Desktop */
 @media only screen and (min-width: 890px) {
   .b-container {
     background-size: 40%;
-    /* min-height: 100vh; */
     max-width: 96%;
     background-size: 50%;
   }
@@ -191,7 +213,6 @@ const testimonialData = ref([
   }
 
   .b-button {
-    /* padding: 2rem 2rem; */
     right: 150%;
     top: -65%;
   }

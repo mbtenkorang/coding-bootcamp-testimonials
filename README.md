@@ -48,5 +48,5 @@ Let's see what ideas might come up in future ... 🤔💭
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [GitHub Page](https://github.com/mbtenkorang)
+- Frontend Mentor - [@mbtenkorang](https://www.frontendmentor.io/profile/mbtenkorang)
